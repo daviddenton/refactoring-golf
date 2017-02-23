@@ -1,18 +1,20 @@
 package a;
 
+import static a.Money.money;
 import static java.util.Arrays.stream;
 
 public class TakeHomeCalculator {
 
-    private final TaxRate taxRate;
+    private final int percent;
 
-    public TakeHomeCalculator(TaxRate taxRate) {
-        this.taxRate = taxRate;
+    public TakeHomeCalculator(int percent) {
+        this.percent = percent;
     }
 
     public Money netAmount(Money first, Money... rest) {
         Money total = stream(rest).reduce(first, Money::plus);
-        Money tax = taxRate.apply(total);
+        Double amount = total.value * (percent / 100d);
+        Money tax = money(amount.intValue(), total.currency);
         return total.minus(tax);
     }
 }
