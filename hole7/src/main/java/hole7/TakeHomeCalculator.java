@@ -1,7 +1,6 @@
 package hole7;
 
-import java.util.Arrays;
-import java.util.List;
+import static java.util.Arrays.stream;
 
 class TakeHomeCalculator {
 
@@ -12,15 +11,7 @@ class TakeHomeCalculator {
     }
 
     Money netAmount(Money first, Money... rest) {
-
-        List<Money> monies = Arrays.asList(rest);
-
-        Money total = first;
-
-        for (Money next : monies) {
-            total = total.plus(next);
-        }
-
+        Money total = stream(rest).reduce(first, Money::plus);
         Money tax = taxRate.apply(total);
         return total.minus(tax);
     }
