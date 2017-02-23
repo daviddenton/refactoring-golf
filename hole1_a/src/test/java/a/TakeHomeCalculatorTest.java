@@ -20,6 +20,7 @@ public class TakeHomeCalculatorTest {
 
 /**
  * steps:
+ *
  * rename number to value
  * rename string to currency
  * rename Pair to Money

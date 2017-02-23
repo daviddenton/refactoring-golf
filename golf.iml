@@ -3,8 +3,8 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/hole1_b/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/hole1_b/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/holeX_b/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/holeX_b/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/hole1/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/hole1/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hole1_after/src/main/java/after/hole1_before/src/main/java" isTestSource="false" />
