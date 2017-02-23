@@ -15,16 +15,16 @@
   - rename Pair to Money
  
  Hole3 - Par 9:
- - merge loops (MANUAL)
- - kill second loop (MANUAL)
+ - merge loops (MANUAL 2)
+ - kill second loop (MANUAL 2)
  - extract variable (total)
  - extract plus method
  - move plus method to Money
  - inline total
  - rename next to other (plus)
 
- Hole4 - Par 8:
- - replace first.currency total.currency (so can extract minus) (MANUAL)
+ Hole4 - Par 9:
+ - replace first.currency total.currency (so can extract minus) (MANUAL 2)
  - extract minus method (keep original sig)
  - move minus method to Money
  - rename tax to other
@@ -38,14 +38,13 @@
  - create field taxRate
  - inline percent in calc
  - remove field percent (NOT SAFE DELETE!)
- - replace first.currency total.currency (so can extract minus) (MANUAL)
+ - replace first.currency total.currency (so can extract minus) (MANUAL 2)
  - extract method apply
  - extract parameter taxRate
  - move apply method to TaxRate
  - replace constructor with factory
 
- Hole6 - Par 4:
- - replace loop with reduce (MANUAL)
+ Hole6 - Par 8:
+ - replace loop with reduce (MANUAL 6)
  - inline getPercent() in TaxRate
- - static import in tests
  - replace public with package private
