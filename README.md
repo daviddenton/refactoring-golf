@@ -34,7 +34,7 @@ These are the best known scores, achieved using IntelliJ:
 - Hole5 - Par 10
 - Hole6 - Par 8
  
-Total Par: 48
+Total Par: 46
 
 ##Acknowledgements:
 This exercise was developed with Ivan (@s4nchez). :)
