@@ -10,31 +10,31 @@ public class TakeHomeCalculator {
         this.percent = percent;
     }
 
-    public Money netAmount(Money first, Money... rest) {
-        Money total = stream(rest).reduce(first, (money, that) -> {
-            if (money.currency.equals(that.currency)) {
-                return new Money(money.value + that.value, money.currency);
+    public Pair netAmount(Pair first, Pair... rest) {
+        Pair total = stream(rest).reduce(first, (money, that) -> {
+            if (money.string.equals(that.string)) {
+                return new Pair(money.number + that.number, money.string);
             } else {
                 throw new Incalculable();
             }
         });
 
-        Double amount = total.value * (percent / 100d);
-        Money tax = new Money(amount.intValue(), total.currency);
+        Double amount = total.number * (percent / 100d);
+        Pair tax = new Pair(amount.intValue(), total.string);
 
-        if (total.currency.equals(tax.currency)) {
-            return new Money(total.value - tax.value, total.currency);
+        if (total.string.equals(tax.string)) {
+            return new Pair(total.number - tax.number, total.string);
         }
         throw new Incalculable();
     }
 
-    public static class Money {
-        final int value;
-        final String currency;
+    public static class Pair {
+        final int number;
+        final String string;
 
-        public Money(int value, String currency) {
-            this.value = value;
-            this.currency = currency;
+        public Pair(int number, String string) {
+            this.number = number;
+            this.string = string;
         }
 
     }

@@ -8,18 +8,21 @@ public class TakeHomeCalculatorTest {
 
     @Test
     public void canCalculateTax() throws Exception {
-        assertEquals(135, new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Money(40, "GBP"), new TakeHomeCalculator.Money(50, "GBP"), new TakeHomeCalculator.Money(60, "GBP")).value);
+        assertEquals(135, new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair(40, "GBP"), new TakeHomeCalculator.Pair(50, "GBP"), new TakeHomeCalculator.Pair(60, "GBP")).number);
     }
 
     @Test(expected = Incalculable.class)
     public void cannotSumDifferentCurrencies() throws Exception {
-        new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Money(4, "GBP"), new TakeHomeCalculator.Money(5, "USD"));
+        new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair(4, "GBP"), new TakeHomeCalculator.Pair(5, "USD"));
     }
 }
 
 /**
  * steps:
- * extract Money object
+ * rename number to value
+ * rename string to currency
+ * rename Pair to Money
+ * extract Money to big boy
  * replace constructor with factory
  * extract plus method
  * move plus method to Money
