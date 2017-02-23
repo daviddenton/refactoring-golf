@@ -48,3 +48,5 @@
  - replace loop with reduce (MANUAL 6)
  - inline getPercent() in TaxRate
  - replace public with package private
+
+Total: 48
