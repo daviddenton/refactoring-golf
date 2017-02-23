@@ -17,7 +17,7 @@ class TakeHomeCalculator {
 
         Pair<Integer, String> total = first;
         for (Pair<Integer, String> next : pairs) {
-            if (!next.second.equals(total.second)) {
+            if (next.second != total.second) {
                 throw new Incalculable();
             }
 
@@ -27,7 +27,7 @@ class TakeHomeCalculator {
         Double amount = total.first * (percent / 100d);
         Pair<Integer, String> tax = new Pair<>(amount.intValue(), first.second);
 
-        if (total.second.equals(tax.second)) {
+        if (total.second == tax.second) {
             return new Pair<>(total.first - tax.first, first.second);
         } else {
             throw new Incalculable();
