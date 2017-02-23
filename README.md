@@ -28,7 +28,7 @@ Allow yourselves a maximum of 2 attempts at each round to determine your best sc
 ##Par scores:
 These are the best known scores, achieved using IntelliJ:
 - Hole1 - Par 4
-- Hole2 - Par 10
+- Hole2 - Par 8
 - Hole3 - Par 7
 - Hole4 - Par 9
 - Hole5 - Par 10
