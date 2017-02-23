@@ -1,6 +1,7 @@
 package a;
 
-import static java.util.Arrays.stream;
+import java.util.Arrays;
+import java.util.List;
 
 public class TakeHomeCalculator {
 
@@ -11,19 +12,25 @@ public class TakeHomeCalculator {
     }
 
     public Pair netAmount(Pair first, Pair... rest) {
-        Pair total = stream(rest).reduce(first, (money, that) -> {
-            if (money.string.equals(that.string)) {
-                return new Pair(money.number + that.number, money.string);
-            } else {
+
+        List<Pair> pairs = Arrays.asList(rest);
+
+        int total = 0;
+        for (Pair pair : pairs) {
+            total = total + pair.number;
+        }
+
+        for (Pair next : pairs) {
+            if (first.string != next.string) {
                 throw new Incalculable();
             }
-        });
+        }
 
-        Double amount = total.number * (percent / 100d);
-        Pair tax = new Pair(amount.intValue(), total.string);
+        Double amount = total * (percent / 100d);
+        Pair tax = new Pair(amount.intValue(), first.string);
 
-        if (total.string.equals(tax.string)) {
-            return new Pair(total.number - tax.number, total.string);
+        if (first.string.equals(tax.string)) {
+            return new Pair(first.number - tax.number, first.string);
         }
         throw new Incalculable();
     }
