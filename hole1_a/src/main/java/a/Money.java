@@ -19,4 +19,11 @@ public class Money {
         }
         throw new Incalculable();
     }
+
+    public Money minus(Money that) {
+        if (currency.equals(that.currency)) {
+            return money(this.value - that.value, currency);
+        }
+        throw new Incalculable();
+    }
 }
