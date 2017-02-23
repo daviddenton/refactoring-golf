@@ -17,13 +17,11 @@ public class TakeHomeCalculator {
 
         Pair total = first;
         for (Pair next : pairs) {
-            total = new Pair(total.number + next.number, first.string);
-        }
-
-        for (Pair next : pairs) {
-            if (first.string != next.string) {
+            if (!next.string.equals(total.string)) {
                 throw new Incalculable();
             }
+
+            total = new Pair(total.number + next.number, next.string);
         }
 
         Double amount = total.number * (percent / 100d);
