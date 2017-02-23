@@ -16,11 +16,14 @@ class TakeHomeCalculator {
         List<Pair<Integer, String>> pairs = Arrays.asList(rest);
 
         Pair<Integer, String> total = first;
+
         for (Pair<Integer, String> next : pairs) {
             if (next.second != total.second) {
                 throw new Incalculable();
             }
+        }
 
+        for (Pair<Integer, String> next : pairs) {
             total = new Pair<>(total.first + next.first, next.second);
         }
 

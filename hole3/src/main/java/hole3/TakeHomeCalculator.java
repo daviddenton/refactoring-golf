@@ -16,11 +16,14 @@ class TakeHomeCalculator {
         List<Money> monies = Arrays.asList(rest);
 
         Money total = first;
+
         for (Money next : monies) {
             if (!next.currency.equals(total.currency)) {
                 throw new Incalculable();
             }
+        }
 
+        for (Money next : monies) {
             total = new Money(total.value + next.value, next.currency);
         }
 
