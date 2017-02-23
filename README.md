@@ -1,3 +1,4 @@
+#Refactoring Golf
 
 Refactoring Golf is a game designed to stretch your refactoring muscles and get you to explore your IDE to see what's really possible using shortcuts and automation.
 
@@ -34,3 +35,6 @@ These are the best known scores, achieved using IntelliJ:
 - Hole6 - Par 8
  
 Total Par: 48
+
+##Acknowledgements:
+These instructions were mostly stolen from @JasonGorman's <a href="https://github.com/jasongorman/RefactoringGolfJava">Refactoring Golf repo</a>
