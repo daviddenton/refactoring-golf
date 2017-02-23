@@ -1,5 +1,7 @@
 package b;
 
+import hole2.Incalculable;
+
 class Money {
     final int value;
     final String currency;
@@ -17,7 +19,7 @@ class Money {
         if (currency.equals(that.currency)) {
             return money(this.value + that.value, currency);
         } else {
-            throw new a.Incalculable();
+            throw new hole2.Incalculable();
         }
     }
 
@@ -25,7 +27,7 @@ class Money {
         if (currency.equals(that.currency)) {
             return money(this.value - that.value, currency);
         } else {
-            throw new a.Incalculable();
+            throw new Incalculable();
         }
     }
 }

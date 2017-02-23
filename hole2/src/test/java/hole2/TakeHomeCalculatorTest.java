@@ -1,4 +1,4 @@
-package a;
+package hole2;
 
 import org.junit.Test;
 
@@ -20,7 +20,7 @@ public class TakeHomeCalculatorTest {
 
 /**
  * steps:
- *
+ * <p>
  * rename number to value
  * rename string to currency
  * rename Pair to Money
