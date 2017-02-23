@@ -1,11 +1,11 @@
-package after;
+package a;
 
 import org.junit.Test;
 
-import static after.Money.money;
+import static a.Money.money;
 import static org.junit.Assert.assertEquals;
 
-public class CalculatorTest {
+public class TakeHomeCalculatorTest {
 
     @Test
     public void canSumABunchOfAmounts() throws Exception {

@@ -1,4 +1,4 @@
-package after;
+package b;
 
 public class Money {
     final int value;
@@ -16,6 +16,13 @@ public class Money {
     public Money plus(Money that) {
         if (currency.equals(that.currency)) {
             return money(this.value + that.value, currency);
+        }
+        throw new Incalculable();
+    }
+
+    public Money minus(Money that) {
+        if (currency.equals(that.currency)) {
+            return money(this.value - that.value, currency);
         }
         throw new Incalculable();
     }

@@ -1,6 +1,6 @@
-package after;
+package a;
 
-import static after.Money.money;
+import static a.Money.money;
 import static java.util.Arrays.stream;
 
 public class Calculator {
