@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/holeX/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/holeX/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1_after/src/main/java/after/hole1_before/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1_after/src/main/java/after/hole1_before/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole1/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole2/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole2/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole3/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole3/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole4/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole4/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole5/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole5/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole6/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole6/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hole7/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hole7/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="JUnit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
