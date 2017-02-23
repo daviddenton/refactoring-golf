@@ -5,10 +5,10 @@ import java.util.List;
 
 class TakeHomeCalculator {
 
-    private final int percent;
+    private final TaxRate taxRate;
 
-    TakeHomeCalculator(int percent) {
-        this.percent = percent;
+    TakeHomeCalculator(TaxRate taxRate) {
+        this.taxRate = taxRate;
     }
 
     Money netAmount(Money first, Money... rest) {
@@ -21,9 +21,7 @@ class TakeHomeCalculator {
             total = total.plus(next);
         }
 
-        Double amount = total.value * (percent / 100d);
-        Money tax = Money.money(amount.intValue(), first.currency);
-
+        Money tax = taxRate.apply(total);
         return total.minus(tax);
     }
 }
