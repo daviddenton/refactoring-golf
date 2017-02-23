@@ -8,27 +8,30 @@ public class TakeHomeCalculatorTest {
 
     @Test
     public void canCalculateTax() throws Exception {
-        assertEquals(135, new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair(40, "GBP"), new TakeHomeCalculator.Pair(50, "GBP"), new TakeHomeCalculator.Pair(60, "GBP")).number);
+        Integer first = new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair<>(40, "GBP"), new TakeHomeCalculator.Pair<>(50, "GBP"), new TakeHomeCalculator.Pair<>(60, "GBP")).first;
+        assertEquals(135, first.intValue());
     }
 
     @Test(expected = Incalculable.class)
     public void cannotSumDifferentCurrencies() throws Exception {
-        new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair(4, "GBP"), new TakeHomeCalculator.Pair(5, "USD"));
+        new TakeHomeCalculator(10).netAmount(new TakeHomeCalculator.Pair<>(4, "GBP"), new TakeHomeCalculator.Pair<>(5, "USD"));
     }
 }
 
 /**
  * steps:
- * merge loops
- * kill second loop
- * replace != with !.equals
  * rename number to value
  * rename string to currency
  * rename Pair to Money
+ * merge loops
+ * kill second loop
+ * replace != with !.equals
+ * extract variable
+ * extract plus method
+ * move plus method to Pair
+ * replace loop with reduce
  * extract Money to big boy
  * replace constructor with factory
- * extract plus method
- * move plus method to Money
  * replace with method reference (plus)
  * extract minus method
  * move minus method to Money

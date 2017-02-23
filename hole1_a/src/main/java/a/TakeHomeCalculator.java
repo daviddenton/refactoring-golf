@@ -11,35 +11,35 @@ public class TakeHomeCalculator {
         this.percent = percent;
     }
 
-    public Pair netAmount(Pair first, Pair... rest) {
+    public Pair<Integer, String> netAmount(Pair<Integer, String> first, Pair<Integer, String>... rest) {
 
-        List<Pair> pairs = Arrays.asList(rest);
+        List<Pair<Integer, String>> pairs = Arrays.asList(rest);
 
-        Pair total = first;
-        for (Pair next : pairs) {
-            if (!next.string.equals(total.string)) {
+        Pair<Integer, String> total = first;
+        for (Pair<Integer, String> next : pairs) {
+            if (!next.second.equals(total.second)) {
                 throw new Incalculable();
             }
 
-            total = new Pair(total.number + next.number, next.string);
+            total = new Pair<>(total.first + next.first, next.second);
         }
 
-        Double amount = total.number * (percent / 100d);
-        Pair tax = new Pair(amount.intValue(), first.string);
+        Double amount = total.first * (percent / 100d);
+        Pair<Integer, String> tax = new Pair<>(amount.intValue(), first.second);
 
-        if (first.string.equals(tax.string)) {
-            return new Pair(total.number - tax.number, first.string);
+        if (first.second.equals(tax.second)) {
+            return new Pair<>(total.first - tax.first, first.second);
         }
         throw new Incalculable();
     }
 
-    public static class Pair {
-        final int number;
-        final String string;
+    static class Pair<A, B> {
+        final A first;
+        final B second;
 
-        public Pair(int number, String string) {
-            this.number = number;
-            this.string = string;
+        Pair(A first, B second) {
+            this.first = first;
+            this.second = second;
         }
 
     }
