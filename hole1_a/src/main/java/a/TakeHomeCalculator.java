@@ -3,15 +3,15 @@ package a;
 import java.util.Arrays;
 import java.util.List;
 
-public class TakeHomeCalculator {
+class TakeHomeCalculator {
 
     private final int percent;
 
-    public TakeHomeCalculator(int percent) {
+    TakeHomeCalculator(int percent) {
         this.percent = percent;
     }
 
-    public Pair<Integer, String> netAmount(Pair<Integer, String> first, Pair<Integer, String>... rest) {
+    Pair<Integer, String> netAmount(Pair<Integer, String> first, Pair<Integer, String>... rest) {
 
         List<Pair<Integer, String>> pairs = Arrays.asList(rest);
 
