@@ -16,8 +16,8 @@ public class TakeHomeCalculator {
         List<Pair> pairs = Arrays.asList(rest);
 
         Pair total = first;
-        for (Pair pair : pairs) {
-            total = new Pair(total.number + pair.number, first.string);
+        for (Pair next : pairs) {
+            total = new Pair(total.number + next.number, first.string);
         }
 
         for (Pair next : pairs) {
