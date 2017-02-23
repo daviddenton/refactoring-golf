@@ -1,6 +1,6 @@
 package b;
 
-public class Money {
+class Money {
     final int value;
     final String currency;
 
@@ -9,21 +9,23 @@ public class Money {
         this.currency = currency;
     }
 
-    public static Money money(int value, String currency) {
+    static Money money(int value, String currency) {
         return new Money(value, currency);
     }
 
-    public Money plus(Money that) {
+    Money plus(Money that) {
         if (currency.equals(that.currency)) {
             return money(this.value + that.value, currency);
+        } else {
+            throw new a.Incalculable();
         }
-        throw new Incalculable();
     }
 
-    public Money minus(Money that) {
+    Money minus(Money that) {
         if (currency.equals(that.currency)) {
             return money(this.value - that.value, currency);
+        } else {
+            throw new a.Incalculable();
         }
-        throw new Incalculable();
     }
 }

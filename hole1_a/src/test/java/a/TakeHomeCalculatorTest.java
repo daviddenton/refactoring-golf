@@ -20,6 +20,9 @@ public class TakeHomeCalculatorTest {
 
 /**
  * steps:
+ * replace with method reference (plus)
+ * extract minus method
+ * move minus method to Money
  * extract TaxRate parameter object
  * create field taxRate
  * inline percent

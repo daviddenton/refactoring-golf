@@ -1,5 +1,5 @@
 package b;
 
-public class Incalculable extends RuntimeException {
+class Incalculable extends RuntimeException {
 
 }
