@@ -15,9 +15,9 @@ public class TakeHomeCalculator {
 
         List<Pair> pairs = Arrays.asList(rest);
 
-        int total = 0;
+        Pair total = first;
         for (Pair pair : pairs) {
-            total = total + pair.number;
+            total = new Pair(total.number + pair.number, first.string);
         }
 
         for (Pair next : pairs) {
@@ -26,11 +26,11 @@ public class TakeHomeCalculator {
             }
         }
 
-        Double amount = total * (percent / 100d);
+        Double amount = total.number * (percent / 100d);
         Pair tax = new Pair(amount.intValue(), first.string);
 
         if (first.string.equals(tax.string)) {
-            return new Pair(first.number - tax.number, first.string);
+            return new Pair(total.number - tax.number, first.string);
         }
         throw new Incalculable();
     }

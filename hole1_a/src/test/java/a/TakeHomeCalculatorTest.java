@@ -19,6 +19,9 @@ public class TakeHomeCalculatorTest {
 
 /**
  * steps:
+ * replace loop with sum
+ *
+ *
  * rename number to value
  * rename string to currency
  * rename Pair to Money
