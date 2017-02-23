@@ -12,7 +12,14 @@ public class TakeHomeCalculator {
     }
 
     public Money netAmount(Money first, Money... rest) {
-        Money total = stream(rest).reduce(first, Money::plus);
+        Money total = stream(rest).reduce(first, (money, that) -> {
+            if (money.currency.equals(that.currency)) {
+                return money(money.value + that.value, money.currency);
+            } else {
+                throw new Incalculable();
+            }
+        });
+
         Double amount = total.value * (percent / 100d);
         Money tax = money(amount.intValue(), total.currency);
 

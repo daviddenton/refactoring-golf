@@ -13,11 +13,4 @@ public class Money {
         return new Money(value, currency);
     }
 
-    Money plus(Money that) {
-        if (currency.equals(that.currency)) {
-            return money(value + that.value, currency);
-        } else {
-            throw new Incalculable();
-        }
-    }
 }
