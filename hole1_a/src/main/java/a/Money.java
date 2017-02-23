@@ -13,12 +13,11 @@ public class Money {
         return new Money(value, currency);
     }
 
-    public Money plus(Money that) {
+    Money plus(Money that) {
         if (currency.equals(that.currency)) {
-            return money(this.value + that.value, currency);
+            return money(value + that.value, currency);
         } else {
             throw new Incalculable();
         }
     }
-
 }

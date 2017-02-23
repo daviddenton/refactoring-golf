@@ -20,6 +20,8 @@ public class TakeHomeCalculatorTest {
 
 /**
  * steps:
+ * extract plus method
+ * move plus method to Money
  * replace with method reference (plus)
  * extract minus method
  * move minus method to Money
