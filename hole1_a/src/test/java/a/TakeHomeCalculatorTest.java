@@ -23,13 +23,13 @@ public class TakeHomeCalculatorTest {
  * rename number to value
  * rename string to currency
  * rename Pair to Money
- * merge loops
- * kill second loop
+ * merge loops  (MANUAL)
+ * kill second loop (MANUAL)
  * replace != with !.equals
  * extract variable
  * extract plus method
  * move plus method to Pair
- * replace loop with reduce
+ * replace loop with reduce  (MANUAL
  * extract Money to big boy
  * replace constructor with factory
  * replace with method reference (plus)
@@ -39,7 +39,13 @@ public class TakeHomeCalculatorTest {
  * create field taxRate
  * inline percent
  * extract method
- * introduce parameter
+ * extract parameter
  * move apply method to TaxRate
  * replace constructor with factory
  */
+// push-down
+// invert
+// permute
+// extract interface
+// pull-up
+
