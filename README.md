@@ -10,14 +10,14 @@ A "stroke" is essentially a change made to the code, and every stroke costs you 
 
 Your pairing partner should carefully score you as follows:
 
-1 point for every change made to the code using a shortcut or automated IDE feature (e.g., an automated refactoring, code template, or Find/Replace)
-2 points for every manual edit. Note that a single "edit" could cover multiple lines of code.
-Double points for every change made while the code cannot pass the tests after the previous change.
-Zero points for code formatting (e.g., deleting whitespace or optimizing imports).
+- 1 point for every change made to the code using a shortcut or automated IDE feature (e.g., an automated refactoring, code template, or Find/Replace)
+- 2 points for every manual edit. Note that a single "edit" could cover multiple lines of code.
+- Double points for every change made while the code cannot pass the tests after the previous change.
+- Zero points for code formatting (e.g., deleting whitespace or optimizing imports).
 
 Allow yourselves a maximum of 2 attempts at each round to determine your best score.
 
-##HINTS: 
+##Hints: 
 
 1. You may find that customising your IDE is useful (e.g. custom code templates, or even custom refactorings.)
 
