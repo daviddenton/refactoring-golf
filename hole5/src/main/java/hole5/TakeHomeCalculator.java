@@ -3,6 +3,8 @@ package hole5;
 import java.util.Arrays;
 import java.util.List;
 
+import static hole5.Money.money;
+
 class TakeHomeCalculator {
 
     private final int percent;
@@ -22,7 +24,7 @@ class TakeHomeCalculator {
         }
 
         Double amount = total.value * (percent / 100d);
-        Money tax = Money.money(amount.intValue(), first.currency);
+        Money tax = money(amount.intValue(), first.currency);
 
         return total.minus(tax);
     }
