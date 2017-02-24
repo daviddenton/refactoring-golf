@@ -39,7 +39,7 @@ class TakeHomeCalculator {
             this.currency = currency;
         }
 
-        private Money plus(Money other) {
+        Money plus(Money other) {
             if (!other.currency.equals(currency)) {
                 throw new Incalculable();
             }
