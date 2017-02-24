@@ -1,5 +1,7 @@
 package hole6;
 
+import static hole6.Money.money;
+
 public class TaxRate {
     private final int percent;
 
@@ -17,6 +19,6 @@ public class TaxRate {
 
     Money apply(Money total) {
         Double amount = total.value * (getPercent() / 100d);
-        return Money.money(amount.intValue(), total.currency);
+        return money(amount.intValue(), total.currency);
     }
 }
