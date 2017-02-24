@@ -4,49 +4,38 @@
   - invert if
   - remove redundant else
    
- Hole2 - Par 8:
-  - modify constructor sig (Pair)
-  - rename number to value
-  - change field type (value)
-  - rename string to currency
-  - change field type (currency)
+ Hole2 - Par 7:
+  - rename Pair to Money + variable names
+  - replace A with Integer
+  - replace B with String
   - safe delete A
   - safe delete B
-  - rename Pair to Money
+  - rename number to value
+  - rename string to currency
  
- Hole3 - Par 9:
+ Hole3 - Par 5:
  - merge loops (MANUAL 2)
- - kill second loop (MANUAL 2)
- - extract variable (total)
- - extract plus method
- - move plus method to Money
+ - extract plus method + parameter name + visibility
  - inline total
- - rename next to other (plus)
+ - move plus method to Money
 
- Hole4 - Par 9:
+ Hole4 - Par 6:
  - replace first.currency total.currency (so can extract minus) (MANUAL 2)
- - extract minus method (keep original sig)
+ - extract minus method (keep original sig) + visibility + param name
  - move minus method to Money
- - rename tax to other
  - extract Money to big boy
- - make plus package
- - make minus package
  - replace constructor with factory money()
 
- Hole5 - Par 10:
- - extract TaxRate parameter object (from constructor)
- - create field taxRate
- - inline percent in calc
- - remove field percent (NOT SAFE DELETE!)
+ Hole5 - Par 8:
  - replace first.currency total.currency (so can extract minus) (MANUAL 2)
- - extract method apply
+ - extract superclass TaxRate 
+ - replace inheritance with delegation
  - extract parameter taxRate
- - move apply method to TaxRate
+ - encapsulate field (percent)
  - replace constructor with factory
 
- Hole6 - Par 8:
+ Hole6 - Par 7:
  - replace loop with reduce (MANUAL 6)
  - inline getPercent() in TaxRate
- - replace public with package private
 
-Total: 48
+Total: 37
