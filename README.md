@@ -25,16 +25,19 @@ Allow yourselves a maximum of 2 attempts at each round to determine your best sc
 
 3. Keep that second machine available as a tooling environment. Writing custom tools (scripts, templates etc) costs you zero points in refactoring golf.
 
-##Par scores:
+##Course records:
 These are the best known scores, achieved using IntelliJ:
-- Hole1 - Par 4
-- Hole2 - Par 7
-- Hole3 - Par 5
-- Hole4 - Par 6
-- Hole5 - Par 8
-- Hole6 - Par 7
+
+| Hole | Best score | Notes |
+|------|------------|-------|
+| 1    | 4          |       |
+| 2    | 7          |       |
+| 3    | 5          |       |
+| 4    | 6          |       |
+| 5    | 8          |       |
+| 6    | 7          |       |
  
-Total Par: 37
+Course Record: 37
 
 ##Acknowledgements:
 This exercise was developed with Ivan (@s4nchez). :)
