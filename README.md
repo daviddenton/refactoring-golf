@@ -1,4 +1,4 @@
-#Refactoring Golf
+# Refactoring Golf
 
 Refactoring Golf is a game designed to stretch your refactoring muscles and get you to explore your IDE to see what's really possible using shortcuts and automation.
 
@@ -17,7 +17,7 @@ Your pairing partner should carefully score you as follows:
 
 Allow yourselves a maximum of 2 attempts at each round to determine your best score.
 
-##Hints: 
+## Hints: 
 
 1. You may find that customising your IDE is useful (e.g. custom code templates, or even custom refactorings.)
 
@@ -25,7 +25,7 @@ Allow yourselves a maximum of 2 attempts at each round to determine your best sc
 
 3. Keep that second machine available as a tooling environment. Writing custom tools (scripts, templates etc) costs you zero points in refactoring golf.
 
-##Course records:
+## Course records:
 These are the best known scores, achieved using IntelliJ:
 
 | Hole | Best score | Notes |
@@ -39,7 +39,7 @@ These are the best known scores, achieved using IntelliJ:
  
 <b>Course Record: 37</b>
 
-##Acknowledgements:
+## Acknowledgements:
 This exercise was developed with Ivan (@s4nchez). :)
 Thanks to @ivanmoore and @rchatley for the inspiration.
 These instructions were mostly stolen from @jasongorman's <a href="https://github.com/jasongorman/RefactoringGolfJava">Refactoring Golf repo</a>.
