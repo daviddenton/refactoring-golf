@@ -25,12 +25,15 @@
  - extract Money to big boy
  - replace constructor with factory money()
 
- Hole5 - Par 8:
+ Hole5 - Par 10:
+ - extract TaxRate parameter object (from constructor)
+ - create field taxRate
+ - inline percent in calc
+ - remove field percent (NOT SAFE DELETE!)
  - replace first.currency total.currency (so can extract minus) (MANUAL 2)
- - extract superclass TaxRate 
- - replace inheritance with delegation
+ - extract method apply
  - extract parameter taxRate
- - encapsulate field (percent)
+ - move apply method to TaxRate
  - replace constructor with factory
 
  Hole6 - Par 7:
