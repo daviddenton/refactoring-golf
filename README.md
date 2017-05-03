@@ -30,7 +30,7 @@ These are the best known scores, achieved using IntelliJ:
 
 | Hole | Best score | Notes |
 |------|------------|-------|
-| 1    | 4          |       |
+| 1    | 3          |       |
 | 2    | 7          |       |
 | 3    | 5          |       |
 | 4    | 6          |       |

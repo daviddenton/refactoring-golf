@@ -1,6 +1,5 @@
- Hole1 - Par 4:
-  - replace == with equals
-  - replace != with ! equals
+ Hole1 - Par 3:
+  - replace == with equals (fix all inspections)
   - invert if
   - remove redundant else
    
