@@ -42,4 +42,4 @@ These are the best known scores, achieved using IntelliJ:
 ## Acknowledgements:
 This exercise was developed with Ivan (@s4nchez). :)
 Thanks to @ivanmoore and @rchatley for the inspiration.
-These instructions were mostly stolen from @jasongorman's <a href="https://github.com/jasongorman/RefactoringGolfJava">Refactoring Golf repo</a>.
+These instructions were mostly stolen from @jasongorman's <a href="https://github.com/jasongorman/RefactoringGolfJava">Refactoring Golf repo</a>
