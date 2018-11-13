@@ -1,3 +1,5 @@
+ Current best:
+ 
  Hole1 - Par 3:
   - replace == with equals (fix all inspections)
   - invert if
