@@ -1,9 +1,10 @@
 package hole5;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static hole5.Money.*;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TakeHomeCalculatorTest {
 
@@ -13,8 +14,11 @@ public class TakeHomeCalculatorTest {
         assertEquals(135, first.intValue());
     }
 
-    @Test(expected = Incalculable.class)
+    @Test
     public void cannotSumDifferentCurrencies() throws Exception {
-        new TakeHomeCalculator(10).netAmount(money(4, "GBP"), money(5, "USD"));
+        assertThrows(Incalculable.class, () -> {
+            new TakeHomeCalculator(10).netAmount(money(4, "GBP"), money(5, "USD"));
+        });
+
     }
 }
